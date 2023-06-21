@@ -1,4 +1,4 @@
-from ast import List
+from typing import List
 
 
 A = input("문자열을 입력하세요: ")
