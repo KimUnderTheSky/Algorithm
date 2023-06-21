@@ -6,7 +6,7 @@ def isPalindrome(s: str) -> bool:
     # 정규식으로 불필요한 문자 필터링
     s = re.sub('[^a-z0-9]','',s)
 
-    return s == s[::-1] # 파이썬 슬라이싱으로 뒤집기
+    return s == s[::-1] # 파이썬 슬라이싱으로 뒤집기, 슬라이싱은 리스트의 reverse(), for while반복, 재귀 보다 더 빠른 무자열 처리 실행 시간을 가진다.
 A = "race car"
 
 answer = isPalindrome(A)
