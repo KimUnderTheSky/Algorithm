@@ -29,3 +29,7 @@ def trapping_rain(height: List[int]) -> int:
 
         stack.append(i)
     return volume
+
+
+rain_count = trapping_rain(height)
+print(rain_count)
