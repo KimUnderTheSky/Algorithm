@@ -1,0 +1,36 @@
+# 리스트
+a = []
+# 크기
+len(a) # 시간복잡도 O(1)
+# 순차탐색
+elem in a # O(1)
+# 요소 개수 리턴
+a.count(elem) # O(n)
+# 인덱스를 리턴
+a.index(elem) # O(n)
+# elem요소 추가
+a.append(elem) # O(1) 
+# 리스트 마지막 요소 추출
+a.pop() # O(1), 스택의 연산
+#첫번째 요소 추출
+a.pop(1) # O(n)
+# 삭제
+del a[i] # O(n)
+# 팀소트 기반 정렬
+a.sort() # O(nlogn)
+# 최소, 최대값
+min(a), max(a) # O(n)
+# 뒤로 뒤집기
+a.reverse # O(n)
+
+#---------------------------------#
+# 딕셔너리
+a = dict()
+#크기
+len(a)
+#조회 return value
+a[key] #O(1)
+#삽입 
+a[key] = value #O(1)
+# 딕셔너리에 키가 있는지 확인 
+key in a  # O(1)

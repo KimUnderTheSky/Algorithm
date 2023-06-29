@@ -8,15 +8,18 @@ nums = [-1,0,1,2,-1,-4]
 def threeSum(nums):
     entry = [] # 3개의 엘리먼트 튜플을 담은 리스트 
     nums.sort()
-    for i in range(len(nums)): # 배열 조회
+    for i in range(len(nums)-2): # 배열 조회
         j = i+1
         k = len(nums) - 1
         while j < k: # 투포인터 
-            print("인덱스값은: ", i, j, k)
-            if (nums[i] - (nums[j] + nums[k])) == 0:
-                entry.append((nums[i],nums[j],nums[k]))
+            print("index: ", i, j, k)
+            print("value: ", nums[i], nums[j], nums[k])
+            print("three sum: ",nums[i]+nums[j]+nums[k])
+            if (nums[i]+nums[j]+nums[k] == 0):
+                entry.append((nums[i], nums[j], nums[k]))
+                j += 1
             
-            elif (nums[i] - (nums[j] + nums[k])) < 0:
+            elif (nums[i]+nums[j]+nums[k] < 0):
                 j += 1
             else:
                 k -= 1
